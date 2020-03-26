@@ -27,7 +27,6 @@ export class Interceptor implements HttpInterceptor {
                 return next.handle(req);
             } else {
                 return next.handle(undefined);
-                throwError('No logged');
             }
         }
     }
